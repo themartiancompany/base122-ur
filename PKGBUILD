@@ -95,14 +95,14 @@ package() {
     install
   install \
     -vDm644 \
-    "${pkgname}-${pkgver}/COPYING" \
+    "${_Pkg}-${pkgver}/COPYING" \
     -t \
       "${pkgdir}/usr/share/licenses/${pkgname}/"
   install \
     -vDm644 \
-    "${pkgname}-${pkgver}/"{AUTHORS,Changes,README.md} \
+    "${_Pkg}-${pkgver}/"{'README.md'} \
     -t \
-      "${pkgdir}/usr/share/doc/${pkgname}/"
+    "${pkgdir}/usr/share/doc/${pkgname}/"
 }
 
 # vim: ft=sh syn=sh et
