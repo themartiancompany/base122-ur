@@ -44,8 +44,8 @@ _tag="${_commit}"
 _tag_name="commit"
 _tarname="${_Pkg}-${_tag}"
 source=(
-  # "${_tarname}::git+${_url}#${_tag_name}=${_tag}"
-  "${_tarname}.zip::/archive/${_commit}.zip"
+  # "${_tarname}::git+${url}#${_tag_name}=${_tag}"
+  "${_tarname}.zip::${url}/archive/${_commit}.zip"
 )
 sha256sums=(
   # 'SKIP'
