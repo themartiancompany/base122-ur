@@ -100,7 +100,7 @@ package() {
       "${pkgdir}/usr/share/licenses/${pkgname}/"
   install \
     -vDm644 \
-    "${_tarname}/"{'README.md'} \
+    "${_tarname}/README.md" \
     -t \
     "${pkgdir}/usr/share/doc/${pkgname}/"
 }
