@@ -61,7 +61,7 @@ build() {
   local \
     _cmake_opts=()
   _cmake_opts=(
-    # -DCMAKE_INSTALL_PREFIX=/usr
+    -DCMAKE_INSTALL_PREFIX=/usr
     # -DCMAKE_BUILD_TYPE=None
     # -W
     #   no-dev
