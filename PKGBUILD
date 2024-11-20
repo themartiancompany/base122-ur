@@ -71,7 +71,7 @@ build() {
   cmake \
     "${_cmake_opts[@]}" \
     -S \
-      "${_Pkg}-${pkgver}"
+      "${_tarname}"
   make \
     VERBOSE=1 \
     -C \
@@ -95,12 +95,12 @@ package() {
     install
   install \
     -vDm644 \
-    "${_Pkg}-${pkgver}/COPYING" \
+    "${_tarname}/COPYING" \
     -t \
       "${pkgdir}/usr/share/licenses/${pkgname}/"
   install \
     -vDm644 \
-    "${_Pkg}-${pkgver}/"{'README.md'} \
+    "${_tarname}/"{'README.md'} \
     -t \
     "${pkgdir}/usr/share/doc/${pkgname}/"
 }
