@@ -90,6 +90,7 @@ package() {
   make \
     VERBOSE=1 \
     DESTDIR="${pkgdir}" \
+    PREFIX='/usr' \
     -C \
       build \
     install
