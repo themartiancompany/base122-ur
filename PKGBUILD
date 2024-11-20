@@ -7,6 +7,7 @@ _pkg="base122"
 _Pkg="lib${_pkg}"
 pkgname="${_pkg}"
 pkgver=2024.11.20
+_commit="e71b8a65030dcf112911eebc11c40f2ea4ce0bab"
 pkgrel=1
 pkgdesc="Base122 library"
 arch=(
@@ -43,10 +44,12 @@ _tag="${_commit}"
 _tag_name="commit"
 _tarname="${_Pkg}-${_tag}"
 source=(
-  "${_tarname}::git+${_url}#${_tag_name}=${_tag}"
+  # "${_tarname}::git+${_url}#${_tag_name}=${_tag}"
+  "${_tarname}.zip::/archive/${_commit}.zip"
 )
-sha512sums=(
-  'SKIP'
+sha256sums=(
+  # 'SKIP'
+  'd90f811897b110b67fdc826e86cf0f54f0d2cca384d408eece88548f7f189218'
 )
 b2sums=(
   'SKIP'
