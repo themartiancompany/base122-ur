@@ -95,7 +95,7 @@ package() {
     install
   install \
     -vDm644 \
-    "${_tarname}/COPYING" \
+    "${_tarname}/LICENSE" \
     -t \
       "${pkgdir}/usr/share/licenses/${pkgname}/"
   install \
